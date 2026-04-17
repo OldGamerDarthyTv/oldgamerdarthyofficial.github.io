@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OldGamerDarthy OS</title>
+  <meta name="description" content="OldGamerDarthy OS: ambiente web ufficiale di Luigi Sestili Spurio, tra gaming, modding, musica, arte digitale e community.">
+  <meta name="theme-color" content="#0a0d12">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/00-foundations.css">
+  <link rel="stylesheet" href="assets/css/10-core-ui.css">
+  <link rel="stylesheet" href="assets/css/15-desktop-scene.css">
+  <link rel="stylesheet" href="assets/css/20-windows.css">
+  <link rel="stylesheet" href="assets/css/30-games.css">
+  <link rel="stylesheet" href="assets/css/35-race-tournament.css">
+  <link rel="stylesheet" href="assets/css/40-responsive.css">
+  <link rel="stylesheet" href="assets/css/45-adaptive-layout.css">
+  <link rel="stylesheet" href="assets/css/99-dark-overrides.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luigi Sestili Spurio",
+    "alternateName": "OldGamerDarthy",
+    "description": "Content creator italiano attivo in gaming, modding, musica elettronica, arte digitale e divulgazione tech.",
+    "sameAs": [
+      "https://www.youtube.com/@OldGamerDarthyOfficial",
+      "https://twitch.tv/oldgamerdarthyofficial",
+      "https://steamcommunity.com/id/OldGamerDarthyOfficial",
+      "https://steamcommunity.com/groups/OldGamerDarthy",
+      "https://discord.gg/BaC9aPyt7d",
+      "https://www.deviantart.com/oldgamerdarthy",
+      "https://soundcloud.com/oldgamerdarthyofficial",
+      "https://vimeo.com/oldgamerdarthy",
+      "https://www.facebook.com/OldGamerDarthy",
+      "https://github.com/OldGamerDarthyOfficial",
+      "https://www.tiktok.com/@oldgamerdarthyofficial"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="verbose-loader" id="verboseLoader">
+    <div class="verbose-panel">
+      <p class="boot-label">Initializing web operating environment...</p>
+      <h1>Creator System Initialization</h1>
+      <div class="boot-logo-storm" aria-hidden="true">
+        <div class="boot-logo-core">OGD</div>
+        <span class="boot-bolt bolt-a"></span>
+        <span class="boot-bolt bolt-b"></span>
+        <span class="boot-bolt bolt-c"></span>
+      </div>
+      <p class="verbose-subtitle">Preparazione dell'ambiente digitale ufficiale di OldGamerDarthy Official.</p>
+      <div class="verbose-console" id="verboseConsole"></div>
+      <div class="verbose-status">
+        <span id="verbosePhase">Phase 01 / Identity Kernel</span>
+        <span id="verbosePercent">0%</span>
+      </div>
+      <div class="boot-bar verbose-progress">
+        <span></span>
+      </div>
+      <button class="skip-boot" id="skipBootButton" type="button">Salta introduzione</button>
+    </div>
+  </div>
+
+  <div class="boot-screen hidden" id="bootScreen">
+    <div class="boot-panel">
+      <p class="boot-label">Launching creator environment...</p>
+      <h1>OldGamerDarthy OS</h1>
+      <p class="boot-subtitle">Official brand system by #DarkPlayer84TvProductions</p>
+      <p class="boot-note">Ambiente desktop narrativo con identità, media, modding, community e mini arcade.</p>
+      <div class="boot-bar">
+        <span></span>
+      </div>
+      <button class="skip-boot" id="skipBootButtonSecondary" type="button">Entra subito nel desktop</button>
+    </div>
+  </div>
+
+  <div class="desktop-wallpaper"></div>
+  <div class="desktop-scene" id="desktopScene" aria-hidden="true">
+    <section class="scene-layer space-scene active" id="spaceScene">
+      <div class="starfield"></div>
+      <div class="nebula nebula-a"></div>
+      <div class="nebula nebula-b"></div>
+      <div class="earth-horizon">
+        <span class="earth-glow"></span>
+        <span class="earth-core"></span>
+        <span class="earth-atmosphere"></span>
+      </div>
+      <div class="ogd-mother" aria-hidden="true">
+        <span class="mother-halo"></span>
+        <span class="mother-crown"></span>
+        <span class="mother-core">OGD</span>
+        <span class="mother-shield"></span>
+        <span class="mother-wings wing-left"></span>
+        <span class="mother-wings wing-right"></span>
+      </div>
+      <div class="space-fleet fleet-left" aria-hidden="true">
+        <span class="ship ship-a"></span>
+        <span class="ship ship-b"></span>
+        <span class="ship ship-c"></span>
+      </div>
+      <div class="space-fleet fleet-right" aria-hidden="true">
+        <span class="ship ship-d"></span>
+        <span class="ship ship-e"></span>
+        <span class="ship ship-f"></span>
+      </div>
+      <div class="battle-beams" aria-hidden="true">
+        <span class="beam beam-a"></span>
+        <span class="beam beam-b"></span>
+        <span class="beam beam-c"></span>
+      </div>
+      <div class="scene-hud space-hud">
+        <p class="scene-kicker">OldGamerDarthy Style</p>
+        <h2>La OGD Madre protegge la Terra mentre la battaglia infuria nello spazio.</h2>
+        <p id="desktopSceneStatus">Wallpaper narrativo attivo. Il desktop resta in contemplazione finché non si apre il prossimo torneo automatico.</p>
+        <p class="scene-countdown" id="desktopSceneCountdown">Prossimo torneo tra 30:00</p>
+      </div>
+    </section>
+
+    <section class="scene-layer tournament-scene" id="tournamentScene">
+      <div class="tournament-backdrop"></div>
+      <div class="moon-orbit" aria-hidden="true"></div>
+      <div class="tournament-hud">
+        <div class="hud-copy">
+          <p class="scene-kicker">OGD Desktop Grand Prix</p>
+          <h2 id="tournamentTitle">La pista si prepara al prossimo torneo.</h2>
+          <p id="tournamentStatus">Quando il timer scade, i 20 bolidi si accendono e parte una nuova corsa automatica.</p>
+        </div>
+        <div class="season-card">
+          <strong>Stagione dei campioni</strong>
+          <p id="seasonProgress">0 / 20 campioni unici</p>
+          <p id="seasonChampion">Nessun campione proclamato in questa sessione.</p>
+          <ol class="recent-winners" id="recentWinners"></ol>
+        </div>
+      </div>
+      <div class="track-shell">
+        <div class="track-lanes" id="trackLanes"></div>
+      </div>
+    </section>
+  </div>
+  <div class="ambient-orbs"><span></span><span></span><span></span></div>
+  <div class="scanlines"></div>
+
+  <a
+    href="https://discord.gg/BaC9aPyt7d"
+    class="discord-float launch-link"
+    data-site="Discord"
+    data-theme="discord"
+    data-line="Community voice gate opening"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="Apri il server Discord ufficiale"
+  >
+    <span class="discord-logo" aria-hidden="true">
+      <svg viewBox="0 0 64 64" role="img" focusable="false">
+        <defs>
+          <linearGradient id="discordOrb" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#9fb5ff"></stop>
+            <stop offset="55%" stop-color="#7c8cff"></stop>
+            <stop offset="100%" stop-color="#4d5dff"></stop>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="27" fill="url(#discordOrb)"></circle>
+        <path fill="#eef3ff" d="M43.7 21.6a25.4 25.4 0 0 0-6.3-2c-.3.5-.6 1.2-.8 1.8a23.3 23.3 0 0 0-9.2 0 13 13 0 0 0-.9-1.8 25 25 0 0 0-6.3 2c-4 6-5.1 11.8-4.5 17.5a25.8 25.8 0 0 0 7.7 3.9c.6-.8 1.2-1.7 1.6-2.7-.9-.3-1.9-.8-2.7-1.3.2-.2.5-.3.7-.5 5 2.4 10.5 2.4 15.4 0 .2.2.5.4.7.5-.8.5-1.7 1-2.7 1.3.5 1 1 1.9 1.7 2.7a25.7 25.7 0 0 0 7.7-3.9c.7-6.6-1.2-12.4-4.5-17.5ZM26.8 34.8c-1.4 0-2.6-1.3-2.6-2.9 0-1.6 1.1-2.9 2.6-2.9 1.4 0 2.6 1.3 2.6 2.9 0 1.6-1.2 2.9-2.6 2.9Zm10.5 0c-1.4 0-2.6-1.3-2.6-2.9 0-1.6 1.1-2.9 2.6-2.9 1.4 0 2.6 1.3 2.6 2.9 0 1.6-1.2 2.9-2.6 2.9Z"/>
+      </svg>
+    </span>
+    <span class="discord-text">Discord</span>
+  </a>
+
+  <main class="desktop" id="desktop">
+    <button class="desktop-icon" data-window="aboutWindow"><span class="icon-art">OG</span><span class="icon-label">Profilo</span></button>
+    <button class="desktop-icon" data-window="explorerWindow"><span class="icon-art">FD</span><span class="icon-label">Explorer</span></button>
+    <button class="desktop-icon" data-window="mediaWindow"><span class="icon-art">MV</span><span class="icon-label">Media</span></button>
+    <button class="desktop-icon" data-window="productionWindow"><span class="icon-art">DP</span><span class="icon-label">Productions</span></button>
+    <button class="desktop-icon" data-window="gamesWindow"><span class="icon-art">GX</span><span class="icon-label">Games</span></button>
+    <button class="desktop-icon" data-window="guestbookWindow"><span class="icon-art">GB</span><span class="icon-label">Guest Book</span></button>
+    <button class="desktop-icon" data-window="contactWindow"><span class="icon-art">CM</span><span class="icon-label">Connect</span></button>
+
+    <section class="window active" id="aboutWindow" data-title="Profilo Creatore" style="top: 68px; left: 150px; width: 500px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>Profilo Creatore</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body hero-panel">
+        <p class="eyebrow">Creator Identity</p>
+        <h2>OldGamerDarthy Official</h2>
+        <p class="lead">Ambiente ufficiale di Luigi Sestili Spurio: un creator italiano che intreccia gaming, modding, musica elettronica, arte digitale, tecnologia e community building dentro un'unica identità narrativa.</p>
+        <div class="signal-row">
+          <span class="signal-chip">Creator OS</span>
+          <span class="signal-chip">Gaming Identity</span>
+          <span class="signal-chip">Community First</span>
+          <span class="signal-chip">DarkPlayer84TvProductions</span>
+        </div>
+        <div class="stat-grid">
+          <article><strong>Nome reale</strong><span>Luigi Sestili Spurio</span></article>
+          <article><strong>Nome creativo</strong><span>OldGamerDarthy Official</span></article>
+          <article><strong>Firma produttiva</strong><span>#DarkPlayer84TvProductions</span></article>
+          <article><strong>Ambiti</strong><span>Gaming, recensioni, modding tecnico, musica elettronica, arte digitale, vlog, contenuti motivazionali e cultura nerd.</span></article>
+          <article><strong>Mission</strong><span>Offrire uno spazio digitale forte e coerente, dove creatività, tecnica, emozione e supporto alla community convivono senza filtri inutili.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="explorerWindow" data-title="File Explorer" style="top: 120px; left: 360px; width: 760px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>File Explorer</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body explorer-shell">
+        <aside class="explorer-sidebar">
+          <button class="folder-link active" data-folder="desktop">Desktop</button>
+          <button class="folder-link" data-folder="profile">Profilo</button>
+          <button class="folder-link" data-folder="modding">Modding</button>
+          <button class="folder-link" data-folder="media">Media</button>
+          <button class="folder-link" data-folder="community">Community</button>
+          <button class="folder-link" data-folder="archive">Archivio</button>
+        </aside>
+        <div class="explorer-content">
+          <div class="path-bar" id="pathBar">C:\CreatorOS\Desktop</div>
+          <div class="folder-grid" id="folderGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="mediaWindow" data-title="Media Vault" style="top: 170px; left: 210px; width: 600px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>Media Vault</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body">
+        <div class="card-stack">
+          <article class="media-card">
+            <p class="tag">Canale ufficiale</p>
+            <h3>Video, live, riflessioni, musica, modding e frammenti autentici del percorso creativo</h3>
+            <p>Il cuore del progetto vive tra video, live, aggiornamenti, racconti personali, release mod, sperimentazioni musicali e momenti di contatto diretto con la community.</p>
+            <div class="pulse-line"></div>
+          </article>
+          <article class="media-card alt">
+            <p class="tag">Temi ricorrenti</p>
+            <h3>Gaming, recensioni, resilienza, introspezione, crescita personale e comunicazione vera</h3>
+            <p>Molti contenuti toccano temi emotivi e motivazionali: bullismo, forza interiore, dolore trasformato in creatività, e desiderio di lasciare qualcosa di utile a chi guarda.</p>
+          </article>
+          <article class="media-card">
+            <p class="tag">Piattaforme</p>
+            <h3>YouTube, TikTok, Twitch, Vimeo, SoundCloud, DeviantArt, Steam, Discord e GitHub</h3>
+            <p>Il brand si muove su più canali ufficiali: video lunghi e brevi, live, musica, arte digitale, modding, community gaming, codice e archivi pubblici dei progetti.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="productionWindow" data-title="Productions" style="top: 220px; left: 520px; width: 560px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>Productions</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body">
+        <div class="production-banner">
+          <p class="tag">Production Label</p>
+          <h2>#DarkPlayer84TvProductions</h2>
+          <p>La firma produttiva che tiene insieme contenuti, identità visiva, direzione artistica, modding, strumenti per giocatori, packaging dei progetti e crescita costante del brand.</p>
+        </div>
+        <div class="production-meter"><span></span><span></span><span></span><span></span><span></span></div>
+        <ul class="production-list">
+          <li>Produzione editoriale dei contenuti ufficiali e presentazione dei progetti in corso</li>
+          <li>Mod tecniche, fix grafici, ottimizzazioni e strumenti pensati per aiutare i giocatori</li>
+          <li>Cura dell'identità visiva, del tono comunicativo e della riconoscibilità complessiva del brand</li>
+          <li>Archivio vivo di idee, release, roadmap, community, collaborazioni e memoria del progetto</li>
+          <li>Base operativa per l'evoluzione del sito, delle vetrine desktop e delle future versioni del Creator OS</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="window" id="gamesWindow" data-title="Games Hub" style="top: 92px; left: 300px; width: 980px; height: 650px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>Games Hub</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body games-shell">
+        <div class="arcade-intro active" id="arcadeIntro">
+          <canvas id="arcadeIntroCanvas" width="860" height="360" aria-hidden="true"></canvas>
+          <div class="arcade-hero">
+            <p class="tag">Playable Brand Space</p>
+            <h2>Mini giochi originali dentro l'universo OldGamerDarthy</h2>
+            <p>Una sezione interattiva costruita per dare ritmo e carattere al sito: mini giochi originali, rapidi da avviare, coerenti con il brand e senza dipendere da proprietà intellettuali esterne.</p>
+            <div class="arcade-brand-stamp">OGD</div>
+            <div class="arcade-copy">
+              <strong>Ingresso nella sala giochi</strong>
+              <span>Una breve scena introduce il visitatore nella sala giochi del brand e lo accompagna fino al cabinato principale firmato OldGamerDarthy, da cui si apre la selezione dei giochi.</span>
+            </div>
+            <button class="start-button game-action" id="arcadeEnterButton">Entra nella sala giochi</button>
+          </div>
+        </div>
+        <div class="games-switcher" id="gamesSwitcher">
+          <nav class="games-tabs">
+            <button class="game-tab active" data-game="snake">Snake Neon</button>
+            <button class="game-tab" data-game="catcher">Logo Catch</button>
+            <button class="game-tab" data-game="dodger">Star Dodger</button>
+            <button class="game-tab" data-game="memory">Memory Pulse</button>
+            <button class="game-tab" data-game="reactor">Core Reactor</button>
+          </nav>
+          <aside class="games-aside">
+            <p class="tag">Arcade Ranking</p>
+            <h3>Hall of Fame OGD</h3>
+            <p>I punteggi migliori vengono salvati in locale in questo browser.</p>
+            <ol class="leaderboard-list" id="leaderboardList"></ol>
+          </aside>
+          <div class="game-panel active" id="snakeGamePanel">
+            <div class="game-head"><div><strong>Snake Neon</strong><p>Raccogli i nodi energia e fai crescere il serpente.</p></div><div class="game-stats"><span>Score: <strong id="snakeScore">0</strong></span><button class="start-button game-action" id="snakeStart">Start / Restart</button></div></div>
+            <canvas id="snakeCanvas" width="640" height="360" aria-label="Snake game"></canvas>
+            <p class="game-help">Controlli: frecce direzionali o WASD. Premio: Neon Tail Badge.</p>
+          </div>
+          <div class="game-panel" id="catcherGamePanel">
+            <div class="game-head"><div><strong>Logo Catch</strong><p>Muovi la barra e raccogli i token OGD prima che cadano.</p></div><div class="game-stats"><span>Score: <strong id="catcherScore">0</strong></span><button class="start-button game-action" id="catcherStart">Start / Restart</button></div></div>
+            <canvas id="catcherCanvas" width="640" height="360" aria-label="Logo catch game"></canvas>
+            <p class="game-help">Controlli: frecce sinistra/destra o A/D. Premio: Brand Keeper Token.</p>
+          </div>
+          <div class="game-panel" id="dodgerGamePanel">
+            <div class="game-head"><div><strong>Star Dodger</strong><p>Guida il nucleo OGD e schiva gli ostacoli neon il più a lungo possibile.</p></div><div class="game-stats"><span>Score: <strong id="dodgerScore">0</strong></span><button class="start-button game-action" id="dodgerStart">Start / Restart</button></div></div>
+            <canvas id="dodgerCanvas" width="640" height="360" aria-label="Dodger game"></canvas>
+            <p class="game-help">Controlli: frecce sinistra/destra o A/D. Premio: Void Runner Mark.</p>
+          </div>
+          <div class="game-panel" id="memoryGamePanel">
+            <div class="game-head"><div><strong>Memory Pulse</strong><p>Memorizza la sequenza luminosa e ripetila senza errori.</p></div><div class="game-stats"><span>Level: <strong id="memoryLevel">0</strong></span><button class="start-button game-action" id="memoryStart">Start / Restart</button></div></div>
+            <div class="memory-board" id="memoryBoard">
+              <button class="memory-pad pad-a" data-pad="0" aria-label="Pad 1"></button>
+              <button class="memory-pad pad-b" data-pad="1" aria-label="Pad 2"></button>
+              <button class="memory-pad pad-c" data-pad="2" aria-label="Pad 3"></button>
+              <button class="memory-pad pad-d" data-pad="3" aria-label="Pad 4"></button>
+            </div>
+            <p class="game-help" id="memoryStatus">Premi Start per iniziare la sequenza. Premio: Pulse Mind Crest.</p>
+          </div>
+          <div class="game-panel" id="reactorGamePanel">
+            <div class="game-head"><div><strong>Core Reactor</strong><p>Clicca più nuclei possibile prima che il timer arrivi a zero.</p></div><div class="game-stats"><span>Score: <strong id="reactorScore">0</strong></span><button class="start-button game-action" id="reactorStart">Start / Restart</button></div></div>
+            <canvas id="reactorCanvas" width="640" height="360" aria-label="Reaction game"></canvas>
+            <p class="game-help" id="reactorStatus">Sessione da 20 secondi. Clicca i nuclei appena compaiono. Premio: Core Reflex Seal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="contactWindow" data-title="Connect" style="top: 110px; left: 790px; width: 380px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>Connect</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body">
+        <div class="contact-panel">
+          <p class="tag">Official Network</p>
+          <h3>Canali e piattaforme ufficiali</h3>
+          <p class="contact-note">Collegamenti rapidi alle presenze pubbliche principali del progetto, pensati come hub reale e non come semplice lista decorativa.</p>
+          <div class="contact-grid">
+            <a href="https://www.youtube.com/@OldGamerDarthyOfficial" class="contact-link launch-link" data-site="YouTube" data-theme="youtube" data-line="Broadcasting creator signal" target="_blank" rel="noreferrer">YouTube / @OldGamerDarthyOfficial<small>Video, vlog, live, musica e aggiornamenti</small></a>
+            <a href="https://twitch.tv/oldgamerdarthyofficial" class="contact-link launch-link" data-site="Twitch" data-theme="twitch" data-line="Live session handshake" target="_blank" rel="noreferrer">Twitch / oldgamerdarthyofficial<small>Dirette e momenti live</small></a>
+            <a href="https://www.tiktok.com/@oldgamerdarthyofficial" class="contact-link launch-link" data-site="TikTok" data-theme="tiktok" data-line="Short-form energy boot" target="_blank" rel="noreferrer">TikTok / @oldgamerdarthyofficial<small>Clip creative e contenuti brevi</small></a>
+            <a href="https://soundcloud.com/oldgamerdarthyofficial" class="contact-link launch-link" data-site="SoundCloud" data-theme="soundcloud" data-line="Audio emotion engine online" target="_blank" rel="noreferrer">SoundCloud / oldgamerdarthyofficial<small>Musica elettronica e uscite audio</small></a>
+            <a href="https://www.deviantart.com/oldgamerdarthy" class="contact-link launch-link" data-site="DeviantArt" data-theme="deviantart" data-line="Digital art gallery sync" target="_blank" rel="noreferrer">DeviantArt / oldgamerdarthy<small>Arte digitale e visual</small></a>
+            <a href="https://steamcommunity.com/id/OldGamerDarthyOfficial" class="contact-link launch-link" data-site="Steam Profile" data-theme="steam" data-line="Gaming profile uplink" target="_blank" rel="noreferrer">Steam Profile / OldGamerDarthyOfficial<small>Profilo gaming e recensioni</small></a>
+            <a href="https://steamcommunity.com/groups/OldGamerDarthy" class="contact-link launch-link" data-site="Steam Group" data-theme="steam" data-line="Community squad sync" target="_blank" rel="noreferrer">Steam Group / OldGamerDarthy<small>Gruppo multigaming e community</small></a>
+            <a href="https://discord.gg/BaC9aPyt7d" class="contact-link launch-link" data-site="Discord" data-theme="discord" data-line="Community voice gate opening" target="_blank" rel="noreferrer">Discord / community ufficiale<small>Server e interazione diretta</small></a>
+            <a href="https://github.com/OldGamerDarthyOfficial" class="contact-link launch-link" data-site="GitHub" data-theme="github" data-line="Code archive access granted" target="_blank" rel="noreferrer">GitHub / OldGamerDarthyOfficial<small>Code, issue e progetti pubblici</small></a>
+            <a href="https://vimeo.com/oldgamerdarthy" class="contact-link launch-link" data-site="Vimeo" data-theme="vimeo" data-line="Cinematic stream channel ready" target="_blank" rel="noreferrer">Vimeo / oldgamerdarthy<small>Archivio video secondario</small></a>
+            <a href="https://www.facebook.com/OldGamerDarthy" class="contact-link launch-link" data-site="Facebook" data-theme="facebook" data-line="Social profile uplink" target="_blank" rel="noreferrer">Facebook / OldGamerDarthy<small>Presenza social aggiuntiva</small></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="guestbookWindow" data-title="Guest Book" style="top: 120px; left: 280px; width: 760px; height: 560px;">
+      <header class="window-header">
+        <div class="window-title"><span class="title-dot"></span>Guest Book</div>
+        <div class="window-actions">
+          <button class="window-btn" data-action="minimize" aria-label="Minimizza">_</button>
+          <button class="window-btn" data-action="maximize" aria-label="Massimizza">□</button>
+          <button class="window-btn close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body guestbook-layout">
+        <section class="guestbook-card">
+          <p class="tag">Community Messages</p>
+          <h3>Lascia un messaggio a OldGamerDarthy</h3>
+          <p class="guestbook-note">Questo form prepara un messaggio email indirizzato a <strong>darkplayer84tvlive@outlook.com</strong>. L'anteprima locale resta solo su questo dispositivo ed è stata resa più pulita e stabile.</p>
+          <form id="guestbookForm" class="guestbook-form">
+            <label><span>Nome</span><input id="guestName" name="guestName" type="text" maxlength="40" placeholder="Il tuo nome o nickname" required></label>
+            <label><span>Piattaforma</span><input id="guestPlatform" name="guestPlatform" type="text" maxlength="40" placeholder="YouTube, Discord, Steam..." required></label>
+            <label><span>Messaggio</span><textarea id="guestMessage" name="guestMessage" rows="6" maxlength="1200" placeholder="Scrivi qui il tuo commento per il guest book..." required></textarea></label>
+            <div class="guestbook-actions">
+              <button type="submit" class="start-button">Invia via email</button>
+              <button type="button" class="taskbar-chip" id="guestPreviewButton">Aggiungi anteprima locale</button>
+            </div>
+          </form>
+          <div id="guestStatus" class="guest-status" aria-live="polite"></div>
+          <div class="guestbook-preview">
+            <p class="tag">Recent Messages</p>
+            <div id="guestPreviewList" class="guest-preview-list"></div>
+          </div>
+        </section>
+        <section class="guestbook-card response-book">
+          <p class="tag">Response Book</p>
+          <h3>Risposte e linee guida</h3>
+          <p class="guestbook-note">Una piccola raccolta iniziale che può crescere nel tempo fino a diventare un vero diario della community.</p>
+          <div id="responseBookList" class="response-book-list"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="version-badge" aria-label="Versione sito">v0.1.8HF6 Boot Fix</div>
+
+  <div class="site-launch-overlay" id="siteLaunchOverlay" aria-hidden="true">
+    <div class="site-launch-core" id="siteLaunchCore">
+      <div class="site-launch-mark">
+        <span class="mark-ring ring-a"></span>
+        <span class="mark-ring ring-b"></span>
+        <span class="mark-center" id="siteLaunchMarkText">OGD</span>
+      </div>
+      <p class="site-launch-kicker">External Site Launch</p>
+      <h2 id="siteLaunchTitle">Initializing destination</h2>
+      <p class="site-launch-line" id="siteLaunchLine">Preparing branded gateway...</p>
+      <div class="site-launch-bar"><span></span></div>
+    </div>
+  </div>
+
+  <aside class="start-menu" id="startMenu" aria-hidden="true">
+    <div class="start-head"><p>OldGamerDarthy OS</p><span>#DarkPlayer84TvProductions</span></div>
+    <div class="start-apps">
+      <button class="start-item" data-window="aboutWindow">Apri Profilo</button>
+      <button class="start-item" data-window="explorerWindow">Apri File Explorer</button>
+      <button class="start-item" data-window="mediaWindow">Apri Media Vault</button>
+      <button class="start-item" data-window="productionWindow">Apri Productions</button>
+      <button class="start-item" data-window="gamesWindow">Apri Games Hub</button>
+      <button class="start-item" data-window="guestbookWindow">Apri Guest Book</button>
+      <button class="start-item" data-window="contactWindow">Apri Connect</button>
+    </div>
+  </aside>
+
+  <footer class="taskbar">
+    <button class="start-button" id="startButton">Start</button>
+    <div class="taskbar-windows" id="taskbarWindows"></div>
+    <div class="taskbar-status"><span id="clockLabel">00:00</span></div>
+  </footer>
+
+  <script>
+    (function () {
+      function forceBootComplete() {
+        if (window.OGD && typeof window.OGD.finishBoot === 'function') {
+          window.OGD.finishBoot('inline-failsafe');
+          return;
+        }
+
+        document.body.classList.add('boot-complete');
+        document.documentElement.classList.add('boot-complete');
+        document.body.dataset.bootState = 'forced-complete';
+
+        var verbose = document.getElementById('verboseLoader');
+        var boot = document.getElementById('bootScreen');
+        var desktop = document.getElementById('desktop');
+        var taskbar = document.querySelector('.taskbar');
+
+        if (verbose) {
+          verbose.classList.add('hidden');
+          verbose.style.display = 'none';
+          verbose.style.visibility = 'hidden';
+          verbose.style.pointerEvents = 'none';
+        }
+
+        if (boot) {
+          boot.classList.add('hidden');
+          boot.style.display = 'none';
+          boot.style.visibility = 'hidden';
+          boot.style.pointerEvents = 'none';
+        }
+
+        if (desktop) {
+          desktop.style.opacity = '1';
+          desktop.style.visibility = 'visible';
+          desktop.style.pointerEvents = 'auto';
+        }
+
+        if (taskbar) {
+          taskbar.style.opacity = '1';
+          taskbar.style.visibility = 'visible';
+          taskbar.style.pointerEvents = 'auto';
+        }
+      }
+      window.addEventListener('load', function () {
+        window.setTimeout(function () {
+          if (!document.body.classList.contains('boot-complete')) forceBootComplete();
+        }, 6500);
+        window.setTimeout(function () {
+          var boot = document.getElementById('bootScreen');
+          if (boot && !boot.classList.contains('hidden') && !document.body.classList.contains('boot-complete')) {
+            forceBootComplete();
+          }
+        }, 2800);
+      });
+      window.addEventListener('error', function () {
+        window.setTimeout(forceBootComplete, 1200);
+      });
+      window.OGD_FORCE_BOOT_COMPLETE = forceBootComplete;
+    })();
+  </script>
+
+  <script src="assets/js/00-app-state.js"></script>
+  <script src="assets/js/10-windows.js"></script>
+  <script src="assets/js/12-screen-profile.js"></script>
+  <script src="assets/js/15-desktop-scene.js"></script>
+  <script src="assets/js/20-boot.js"></script>
+  <script src="assets/js/30-overlay.js"></script>
+  <script src="assets/js/40-guestbook.js"></script>
+  <script src="assets/js/50-games.js"></script>
+  <script src="assets/js/60-race-tournament.js"></script>
+  <script src="assets/js/99-main.js"></script>
+</body>
+</html>

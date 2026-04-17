@@ -1,0 +1,15 @@
+{
+  "name": "OldGamerDarthy OS",
+  "short_name": "OGD OS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#030407",
+  "theme_color": "#0a0d12",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
